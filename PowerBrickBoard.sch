@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -381,6 +381,48 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="UCM1H331MNL1GS">
+<packages>
+<package name="UCM1H331MNL1GS">
+<smd name="P$1" x="0" y="-4.5" dx="3" dy="5" layer="1"/>
+<smd name="P$2" x="0" y="4.5" dx="3" dy="5" layer="1"/>
+<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.1524" layer="21"/>
+<wire x1="-5" y1="5" x2="5" y2="5" width="0.1524" layer="21"/>
+<wire x1="5" y1="5" x2="5" y2="-5" width="0.1524" layer="21"/>
+<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.1524" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CAPACITOR">
+<wire x1="0" y1="-5.08" x2="0" y2="-2.032" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.508" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
+<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
+<pin name="P$1" x="0" y="5.08" length="middle" rot="R270"/>
+<pin name="P$2" x="0" y="-7.62" length="middle" rot="R90"/>
+<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="UCM1H331MNL1GS">
+<gates>
+<gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UCM1H331MNL1GS">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -394,15 +436,37 @@ DIN A4, landscape with location and doc. field</description>
 <part name="U$1" library="Q48SC12050" deviceset="Q48SC12050" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="U$2" library="PDB_TO_BRICKS" deviceset="BRICK_TO_POWER_DIST_WHOLE" device=""/>
+<part name="U$3" library="UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" value="330 uF"/>
+<part name="U$4" library="UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" value="330 uF"/>
+<part name="U$5" library="UCM1H331MNL1GS" deviceset="UCM1H331MNL1GS" device="" value="330 uF"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="55.88" y="137.16" rot="MR0"/>
-<instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="U$2" gate="G$1" x="43.18" y="86.36"/>
+<instance part="U$1" gate="G$1" x="55.88" y="137.16" smashed="yes" rot="MR0">
+<attribute name="NAME" x="67.9958" y="150.5458" size="1.27" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="67.818" y="125.476" size="1.27" layer="95" rot="MR0"/>
+</instance>
+<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+<instance part="U$2" gate="G$1" x="43.18" y="86.36" smashed="yes"/>
+<instance part="U$3" gate="G$1" x="116.84" y="142.24" smashed="yes">
+<attribute name="NAME" x="119.38" y="144.78" size="1.778" layer="95"/>
+<attribute name="VALUE" x="119.38" y="137.16" size="1.778" layer="96"/>
+</instance>
+<instance part="U$4" gate="G$1" x="129.54" y="142.24" smashed="yes">
+<attribute name="NAME" x="132.08" y="144.78" size="1.778" layer="95"/>
+<attribute name="VALUE" x="132.08" y="137.16" size="1.778" layer="96"/>
+</instance>
+<instance part="U$5" gate="G$1" x="142.24" y="142.24" smashed="yes">
+<attribute name="NAME" x="144.78" y="144.78" size="1.778" layer="95"/>
+<attribute name="VALUE" x="144.78" y="137.16" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -445,6 +509,16 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="71.12" y1="104.14" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
 <label x="83.82" y="104.14" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
+<wire x1="116.84" y1="147.32" x2="129.54" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="129.54" y1="147.32" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
+<junction x="129.54" y="147.32"/>
+<wire x1="129.54" y1="147.32" x2="129.54" y2="152.4" width="0.1524" layer="91"/>
+<label x="129.54" y="152.4" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="ON/OFF" class="0">
 <segment>
@@ -483,6 +557,16 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="73.3552" y1="139.7254" x2="86.36" y2="139.7254" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="139.7254" x2="86.36" y2="139.7" width="0.1524" layer="91"/>
 <label x="83.82" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
+<wire x1="116.84" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$2"/>
+<wire x1="129.54" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
+<junction x="129.54" y="134.62"/>
+<wire x1="129.54" y1="134.62" x2="129.54" y2="129.54" width="0.1524" layer="91"/>
+<label x="129.54" y="129.54" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>
