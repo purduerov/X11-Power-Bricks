@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -386,10 +386,12 @@ DIN A4, landscape with location and doc. field</description>
 <package name="UCM1H331MNL1GS">
 <smd name="P$1" x="0" y="-4.5" dx="3" dy="5" layer="1"/>
 <smd name="P$2" x="0" y="4.5" dx="3" dy="5" layer="1"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.1524" layer="21"/>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.1524" layer="21"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.1524" layer="21"/>
+<wire x1="-5" y1="-5" x2="-5" y2="3" width="0.1524" layer="21"/>
+<wire x1="-3" y1="5" x2="3" y2="5" width="0.1524" layer="21"/>
+<wire x1="5" y1="3" x2="5" y2="-5" width="0.1524" layer="21"/>
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.1524" layer="21"/>
+<wire x1="-3" y1="5" x2="-5" y2="3" width="0.127" layer="21"/>
+<wire x1="3" y1="5" x2="5" y2="3" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -445,27 +447,27 @@ DIN A4, landscape with location and doc. field</description>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="55.88" y="137.16" smashed="yes" rot="MR0">
+<instance part="U$1" gate="G$1" x="55.88" y="137.16" rot="MR0">
 <attribute name="NAME" x="67.9958" y="150.5458" size="1.27" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="67.818" y="125.476" size="1.27" layer="95" rot="MR0"/>
 </instance>
-<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
+<instance part="FRAME1" gate="G$1" x="0" y="0">
 <attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="U$2" gate="G$1" x="43.18" y="86.36" smashed="yes"/>
-<instance part="U$3" gate="G$1" x="116.84" y="142.24" smashed="yes">
-<attribute name="NAME" x="119.38" y="144.78" size="1.778" layer="95"/>
-<attribute name="VALUE" x="119.38" y="137.16" size="1.778" layer="96"/>
+<instance part="U$2" gate="G$1" x="43.18" y="86.36"/>
+<instance part="U$3" gate="G$1" x="149.86" y="144.78" rot="R180">
+<attribute name="NAME" x="147.32" y="142.24" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="147.32" y="149.86" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$4" gate="G$1" x="129.54" y="142.24" smashed="yes">
-<attribute name="NAME" x="132.08" y="144.78" size="1.778" layer="95"/>
-<attribute name="VALUE" x="132.08" y="137.16" size="1.778" layer="96"/>
+<instance part="U$4" gate="G$1" x="137.16" y="144.78" rot="R180">
+<attribute name="NAME" x="134.62" y="142.24" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="134.62" y="149.86" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$5" gate="G$1" x="142.24" y="142.24" smashed="yes">
-<attribute name="NAME" x="144.78" y="144.78" size="1.778" layer="95"/>
-<attribute name="VALUE" x="144.78" y="137.16" size="1.778" layer="96"/>
+<instance part="U$5" gate="G$1" x="124.46" y="144.78" rot="R180">
+<attribute name="NAME" x="121.92" y="142.24" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="121.92" y="149.86" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -475,13 +477,6 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="SIG-GND"/>
 <wire x1="37.7952" y1="142.2654" x2="37.7952" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="37.7952" y1="142.24" x2="25.4" y2="142.24" width="0.1524" layer="91"/>
-<label x="22.86" y="142.24" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="D_GND"/>
-<wire x1="71.12" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
-<label x="83.82" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -510,14 +505,14 @@ DIN A4, landscape with location and doc. field</description>
 <label x="83.82" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="P$1"/>
-<pinref part="U$4" gate="G$1" pin="P$1"/>
-<wire x1="116.84" y1="147.32" x2="129.54" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="P$1"/>
-<wire x1="129.54" y1="147.32" x2="142.24" y2="147.32" width="0.1524" layer="91"/>
-<junction x="129.54" y="147.32"/>
-<wire x1="129.54" y1="147.32" x2="129.54" y2="152.4" width="0.1524" layer="91"/>
-<label x="129.54" y="152.4" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
+<wire x1="149.86" y1="152.4" x2="137.16" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$2"/>
+<wire x1="137.16" y1="152.4" x2="124.46" y2="152.4" width="0.1524" layer="91"/>
+<junction x="137.16" y="152.4"/>
+<wire x1="137.16" y1="152.4" x2="137.16" y2="157.48" width="0.1524" layer="91"/>
+<label x="137.16" y="157.48" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="ON/OFF" class="0">
@@ -559,14 +554,14 @@ DIN A4, landscape with location and doc. field</description>
 <label x="83.82" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="P$2"/>
-<pinref part="U$4" gate="G$1" pin="P$2"/>
-<wire x1="116.84" y1="134.62" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="P$2"/>
-<wire x1="129.54" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
-<junction x="129.54" y="134.62"/>
-<wire x1="129.54" y1="134.62" x2="129.54" y2="129.54" width="0.1524" layer="91"/>
-<label x="129.54" y="129.54" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<pinref part="U$4" gate="G$1" pin="P$1"/>
+<wire x1="149.86" y1="139.7" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="137.16" y1="139.7" x2="124.46" y2="139.7" width="0.1524" layer="91"/>
+<junction x="137.16" y="139.7"/>
+<wire x1="137.16" y1="139.7" x2="137.16" y2="134.62" width="0.1524" layer="91"/>
+<label x="137.16" y="134.62" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>
