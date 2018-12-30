@@ -158,10 +158,14 @@
 <wire x1="60.325" y1="0.127" x2="60.325" y2="40.005" width="0" layer="20"/>
 <wire x1="60.325" y1="40.005" x2="-0.014" y2="39.878" width="0" layer="20"/>
 <wire x1="-0.014" y1="39.878" x2="-0.014" y2="0" width="0" layer="20"/>
-<text x="2.032" y="35.052" size="0.6096" layer="21">Power Bricks Board v1.0
+<text x="1.524" y="34.036" size="0.8128" layer="21">Power Brick Board v1.0
 Ryan Pearson
 Cynthia Zatlokowicz
 Jason King</text>
+<text x="34.544" y="31.75" size="1.27" layer="21">+12V</text>
+<text x="20.828" y="31.75" size="1.27" layer="21">GND</text>
+<text x="3.556" y="25.4" size="0.8128" layer="21">+48V</text>
+<text x="2.794" y="10.16" size="0.8128" layer="21">48V_GND</text>
 </plain>
 <libraries>
 <library name="Q48SC12050">
