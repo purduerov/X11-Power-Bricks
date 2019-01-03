@@ -314,26 +314,26 @@ DIN A4, landscape with location and doc. field</description>
 <pad name="+12V3" x="23.07" y="37.05" drill="1" rot="R90"/>
 <pad name="+12V4" x="25.61" y="37.05" drill="1" rot="R90"/>
 <pad name="+12V5" x="28.15" y="37.05" drill="1" rot="R90"/>
-<pad name="P$5" x="18.625" y="3.93" drill="1" rot="R90"/>
-<pad name="ON/OFF" x="21.165" y="3.93" drill="1" rot="R90"/>
-<pad name="P$3" x="23.705" y="3.93" drill="1" rot="R90"/>
+<pad name="ON/OFF" x="18.625" y="3.93" drill="1" rot="R90"/>
+<pad name="+48V7" x="21.165" y="3.93" drill="1" rot="R90"/>
+<pad name="+48V6" x="23.705" y="3.93" drill="1" rot="R90"/>
 <pad name="48V_GND3" x="36.405" y="3.93" drill="1" rot="R90"/>
 <pad name="48V_GND4" x="38.945" y="3.93" drill="1" rot="R90"/>
-<pad name="P$4" x="18.625" y="6.47" drill="1" rot="R90"/>
-<pad name="D_GND" x="21.165" y="6.47" drill="1" rot="R90"/>
-<pad name="P$18" x="23.705" y="6.47" drill="1" rot="R90"/>
+<pad name="D_GND" x="18.625" y="6.47" drill="1" rot="R90"/>
+<pad name="+48V8" x="21.165" y="6.47" drill="1" rot="R90"/>
+<pad name="+48V5" x="23.705" y="6.47" drill="1" rot="R90"/>
 <pad name="48V_GND1" x="36.405" y="6.47" drill="1" rot="R90"/>
 <pad name="48V_GND2" x="38.945" y="6.47" drill="1" rot="R90"/>
 <pad name="P$31" x="31.325" y="3.93" drill="1" rot="R90"/>
-<pad name="2" x="33.865" y="3.93" drill="1" rot="R90"/>
+<pad name="48V_GND5" x="33.865" y="3.93" drill="1" rot="R90"/>
 <pad name="+48V3" x="26.245" y="3.93" drill="1" rot="R90"/>
 <pad name="+48V4" x="28.785" y="3.93" drill="1" rot="R90"/>
-<pad name="P$35" x="41.485" y="3.93" drill="1" rot="R90"/>
+<pad name="48V_GND7" x="41.485" y="3.93" drill="1" rot="R90"/>
 <pad name="P$36" x="31.325" y="6.47" drill="1" rot="R90"/>
-<pad name="1" x="33.865" y="6.47" drill="1" rot="R90"/>
+<pad name="48V_GND6" x="33.865" y="6.47" drill="1" rot="R90"/>
 <pad name="+48V1" x="26.245" y="6.47" drill="1" rot="R90"/>
 <pad name="+48V2" x="28.785" y="6.47" drill="1" rot="R90"/>
-<pad name="P$40" x="41.485" y="6.47" drill="1" rot="R90"/>
+<pad name="48V_GND8" x="41.485" y="6.47" drill="1" rot="R90"/>
 <wire x1="16.72" y1="38.32" x2="43.39" y2="38.32" width="0.127" layer="21"/>
 <wire x1="43.39" y1="38.32" x2="43.39" y2="33.24" width="0.127" layer="21"/>
 <wire x1="43.39" y1="33.24" x2="16.72" y2="33.24" width="0.127" layer="21"/>
@@ -371,8 +371,8 @@ DIN A4, landscape with location and doc. field</description>
 <device name="" package="BRICK_TO_POWER_DIST_WHOLE">
 <connects>
 <connect gate="G$1" pin="+12V" pad="+12V1 +12V2 +12V3 +12V4 +12V5 +12V6 +12V7 +12V8 +12V9 +12V10"/>
-<connect gate="G$1" pin="+48V" pad="+48V1 +48V2 +48V3 +48V4"/>
-<connect gate="G$1" pin="48V_GND" pad="48V_GND1 48V_GND2 48V_GND3 48V_GND4"/>
+<connect gate="G$1" pin="+48V" pad="+48V1 +48V2 +48V3 +48V4 +48V5 +48V6 +48V7 +48V8"/>
+<connect gate="G$1" pin="48V_GND" pad="48V_GND1 48V_GND2 48V_GND3 48V_GND4 48V_GND5 48V_GND6 48V_GND7 48V_GND8"/>
 <connect gate="G$1" pin="D_GND" pad="D_GND"/>
 <connect gate="G$1" pin="GND" pad="GND1 GND2 GND3 GND4 GND5 GND6 GND7 GND8 GND9 GND10"/>
 <connect gate="G$1" pin="ON/OFF" pad="ON/OFF"/>
