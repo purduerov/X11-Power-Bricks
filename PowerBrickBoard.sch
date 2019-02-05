@@ -161,22 +161,22 @@
 <library name="Q48SC12050">
 <packages>
 <package name="Q48SC12050">
-<pad name="VIN+" x="0" y="0" drill="1.6002"/>
-<pad name="ON/OFF" x="0" y="-7.62" drill="1.6002"/>
-<pad name="CASE" x="0" y="-11.43" drill="1.6002"/>
-<pad name="VIN-" x="0" y="-15.24" drill="1.6002"/>
-<pad name="VOUT+" x="50.8" y="0" drill="2.1082"/>
-<pad name="SENSE+" x="50.8" y="-3.81" drill="1.6002"/>
+<pad name="VIN-" x="0" y="0" drill="1.6002"/>
+<pad name="CASE" x="0" y="-7.62" drill="1.6002"/>
+<pad name="ON/OFF" x="0" y="-11.43" drill="1.6002"/>
+<pad name="VIN+" x="0" y="-15.24" drill="1.6002"/>
+<pad name="VOUT-" x="50.8" y="0" drill="2.1082"/>
+<pad name="SENSE-" x="50.8" y="-3.81" drill="1.6002"/>
 <pad name="TRIM" x="50.8" y="-7.62" drill="1.6002"/>
-<pad name="SENSE-" x="50.8" y="-11.43" drill="1.6002"/>
-<pad name="VOUT-" x="50.8" y="-15.24" drill="2.1082"/>
+<pad name="SENSE+" x="50.8" y="-11.43" drill="1.6002"/>
+<pad name="VOUT+" x="50.8" y="-15.24" drill="2.1082"/>
 <pad name="SMBALERT" x="53.34" y="-7.62" drill="1.1938"/>
-<pad name="PMBCLK" x="53.34" y="-5.6134" drill="1.1938"/>
-<pad name="ADDR1" x="53.34" y="-3.6068" drill="1.1938"/>
-<pad name="PMBDATA" x="53.34" y="-9.6266" drill="1.1938"/>
-<pad name="DGND" x="53.34" y="-11.6332" drill="1.1938"/>
-<pad name="ADDR0" x="53.34" y="-1.6002" drill="1.1938"/>
-<pad name="C2" x="53.34" y="-13.6398" drill="1.1938"/>
+<pad name="PMBDATA" x="53.34" y="-5.6134" drill="1.1938"/>
+<pad name="DGND" x="53.34" y="-3.6068" drill="1.1938"/>
+<pad name="PMBCLK" x="53.34" y="-9.6266" drill="1.1938"/>
+<pad name="ADDR1" x="53.34" y="-11.6332" drill="1.1938"/>
+<pad name="C2" x="53.34" y="-1.6002" drill="1.1938"/>
+<pad name="ADDR0" x="53.34" y="-13.6398" drill="1.1938"/>
 <wire x1="-4.318" y1="11.43" x2="-4.318" y2="-26.416" width="0.127" layer="21"/>
 <wire x1="-4.318" y1="-26.416" x2="54.102" y2="-26.416" width="0.127" layer="21"/>
 <wire x1="54.102" y1="-26.416" x2="54.102" y2="-17.78" width="0.127" layer="21"/>
