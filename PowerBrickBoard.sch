@@ -162,8 +162,7 @@
 <packages>
 <package name="Q48SC12050">
 <pad name="VIN-" x="0" y="0" drill="1.6002"/>
-<pad name="CASE" x="0" y="-7.62" drill="1.6002"/>
-<pad name="ON/OFF" x="0" y="-11.43" drill="1.6002"/>
+<pad name="ON/OFF" x="0" y="-7.62" drill="1.6002"/>
 <pad name="VIN+" x="0" y="-15.24" drill="1.6002"/>
 <pad name="VOUT-" x="50.8" y="0" drill="2.1082"/>
 <pad name="SENSE-" x="50.8" y="-3.81" drill="1.6002"/>
@@ -193,7 +192,6 @@
 <pin name="SENSE-" x="-17.4752" y="-2.5146" length="middle"/>
 <pin name="VOUT-" x="-17.4752" y="0.0254" length="middle"/>
 <pin name="VIN-" x="-17.4752" y="2.5654" length="middle"/>
-<pin name="CASE" x="-17.4752" y="5.1054" length="middle"/>
 <pin name="ON/OFF" x="-17.4752" y="7.6454" length="middle"/>
 <pin name="VIN+" x="-17.4752" y="10.1854" length="middle"/>
 <pin name="VOUT+" x="18.0848" y="10.1854" length="middle" rot="R180"/>
@@ -223,7 +221,6 @@
 <connect gate="G$1" pin="ADDR0" pad="ADDR0"/>
 <connect gate="G$1" pin="ADDR1" pad="ADDR1"/>
 <connect gate="G$1" pin="C2" pad="C2"/>
-<connect gate="G$1" pin="CASE" pad="CASE"/>
 <connect gate="G$1" pin="CLOCK" pad="PMBCLK"/>
 <connect gate="G$1" pin="DATA" pad="PMBDATA"/>
 <connect gate="G$1" pin="ON/OFF" pad="ON/OFF"/>
